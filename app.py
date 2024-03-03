@@ -3,9 +3,11 @@ import numpy as np
 import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
 from typing import List
+from flask_cors import CORS
 import os
 
 app = Flask(__name__)
+cors = CORS(app)
 
 soil_index_dict = {
   "1": "Sand",
